@@ -7,22 +7,24 @@
   <title>Seu país</title>
 </head>
 <body>
-  <h1>De qual Pais você é?</h1>
-  Insira aqui seu país <input type="text" name="txtn1" id="txtn1">
+  <h1>De qual País você é?</h1>
+  Insira aqui seu País <input type="text" name="txtn1" id="txtn1">
   <input type="button" value="Clique aqui" onclick="mostrar()">
   <div id="res">
 
   </div>
 
   <script>
-    function mostrar ()
-    var país = document.getElementById('txtn1')
-    var res = document.getElementById('res')
-    res.innerHTML = 'Você é Brasileiro!'
-    if (país != Brasil) {
+    function mostrar() {
+    var país = document.querySelector('input#txtn1')
+    var res = document.querySelector('div#res')
+    res.innerHTML = `Você é ${páis}`
+    if (país == Brasil) {
+      res.innerHTML = 'Você é Brasileiro!'
+    } else {
       res.innerHTML = 'Você é Estrangeiro!'
     }
-    
+  }
   </script>
 </body>
 </html>
